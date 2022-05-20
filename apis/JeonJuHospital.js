@@ -3,6 +3,8 @@ const dotenv = require('dotenv');
 const convert = require('xml-js');
 const request = require('request');
 
+const pool = require('./config/connection')
+
 dotenv.config({path: path.join(__dirname, '../.env')})
 
 const SERVICE_KEY = process.env.SERVIC_EKEY;
